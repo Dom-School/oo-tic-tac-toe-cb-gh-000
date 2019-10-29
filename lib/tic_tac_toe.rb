@@ -72,4 +72,8 @@ class TicTacToe
       cell == "X" || cell == "O"
     end
   end
+
+  def draw?
+    full?(@board) && !won?(@board)
+  end
 end
